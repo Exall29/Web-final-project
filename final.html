@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherInsights</title>
+    <link rel="stylesheet" href="final.css">
+    
+</head>
+
+<body>
+
+        <!-- Barre latérale -->
+    <div class="sidebar" id="mySidebar">
+        <button class="close-btn" onclick="closeSidebar()">×</button>
+        <a href="#">Home Page</a>
+        <a href="#">Prevision</a>
+        <a href="#">Chart</a>
+        <a href="#">About us</a>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <div id="logo">
+                <button class="open-btn" onclick="openSidebar()">☰</button>
+                <img src="image/logo.png" alt="Logo">
+                <h2>WeatherInsights</h2>
+            </div>
+            <div class="weather-input">
+                <input type="text" name="city" id="city-input" placeholder="Enter city name">
+                <button type="button" id="searchBtn">
+                    <i>Search</i>
+                    <img src="image/loupe.png" alt="Loupe">
+                </button>
+                <button type="button" id="locationBtn">
+                    <i>Current Location</i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="weather-data">
+            <div class="left">
+                <div class="cards">
+                    <div class="weather-now">
+                        <div class="now">
+                            <p>Now</p>
+                            <h2>15 °C</h2>
+                            <p>Cloudy</p>
+                        </div>
+                        <img src="image/cloud.png" alt="Cloud" id="weather">
+                        
+                    </div>
+                    <hr>
+                    <div class="calendar">
+                        <img src="image/calendar.png" alt="calendar logo" id="logo">
+                        <p> 19 nov.</p>
+                    </div>
+                    <div class="location">
+                        <img src="image/location.png" alt="location logo" id="logo">
+                        <p> Busan</p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <h2>5 Days Forecast</h2>
+                    <div class="forecast">
+                        <div class="weather-forecast">
+                            <img src="image/cloud.png" alt="weather" id="weather-forecast-logo">
+                            <span>20°C</spawn>
+                        </div>
+                        <p>Date</p>
+                        <p>Day</p>
+                    </div>
+                    <div class="forecast">
+                        <div class="weather-forecast">
+                            <img src="image/cloud.png" alt="weather" id="weather-forecast-logo">
+                            <span>20°C</spawn>
+                        </div>
+                        <p>Date</p>
+                        <p>Day</p>
+                    </div>
+                    <div class="forecast">
+                        <div class="weather-forecast">
+                            <img src="image/cloud.png" alt="weather" id="weather-forecast-logo">
+                            <span>20°C</spawn>
+                        </div>
+                        <p>Date</p>
+                        <p>Day</p>
+                    </div>
+                    <div class="forecast">
+                        <div class="weather-forecast">
+                            <img src="image/cloud.png" alt="weather" id="weather-forecast-logo">
+                            <span>20°C</spawn>
+                        </div>
+                        <p>Date</p>
+                        <p>Day</p>
+                    </div>
+                    <div class="forecast">
+                        <div class="weather-forecast">
+                            <img src="image/cloud.png" alt="weather" id="weather-forecast-logo">
+                            <span>20°C</spawn>
+                        </div>
+                        <p>Date</p>
+                        <p>Day</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <h2>Today's Highlights</h2>
+                <div class="highlights">
+                    <div class="cards">
+                        <div class="cards-head">
+                            <p>Air quality index</p>
+                            <p id="air-quality">Good</p>
+                        </div>
+                        <div class="air-data">
+                            <div class="data">
+                                <p>Temperature</p>
+                                <h2>____</h2>
+                            </div>
+                            <div class="data">
+                                <p>Humidity</p>
+                                <h2>____</h2>
+                            </div>
+                            <div class="data">
+                                <p>PM2.5</p>
+                                <h2>____</h2>
+                            </div>
+                            <div class="data">
+                                <p>PM10</p>
+                                <h2>____</h2>
+                            </div>
+                            <div class="data">
+                                <p>NOx</p>
+                                <h2>____</h2>
+                            </div>
+                            <div class="data">
+                                <p>NH3</p>
+                                <h2>____</h2>
+                            </div>
+                            <div class="data">
+                                <p>CO2</p>
+                                <h2>____</h2>
+                            </div>
+                            <div class="data">
+                                <p>SO2</p>
+                                <h2>____</h2>
+                            </div>
+                            <div class="data">
+                                <p>VOC</p>
+                                <h2>____</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="cards-head">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+    <script src="final.js"></script>
+
+</body>
+
+</html>
