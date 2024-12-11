@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - WeatherInsights</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+
+    <div class="sidebar" id="mySidebar">
+        <button class="close-btn" onclick="closeSidebar()">×</button>
+        <h1>Menu</h1>
+        <br>
+        <br>
+        <a href="index.html">Home Page</a>
+        <a href="chart.html">Chart</a>
+        <a href="about.html">About us</a>
+    </div>
+
+    <div class="container" id="mainContent">
+        <div class="header">
+            <div id="logo">
+                <button class="open-btn" onclick="openSidebar()">☰</button>
+                <img src="image/logo.png" alt="Logo">
+                <h2>WeatherInsights</h2>
+            </div>
+        </div>
+
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>Welcome to WeatherInsights, a project created for our school assignment. Our goal is to provide users with accurate and timely weather and air quality data through an intuitive interface.</p>
+            <p>We believe in the power of technology to help individuals and communities make informed decisions based on real-time weather data.</p>
+            
+            <h3>Our Mission</h3>
+            <p>Our mission is to make weather data more accessible and easy to understand, so you can stay prepared for any situation, whether it's a sunny day or a stormy night.</p>
+
+            <h3>Our Team</h3>
+            <ul>
+                <li>Lucas Bolsinger - Developer</li>
+            </ul>
+
+            <h3>Contact Us</h3>
+            <p>If you have any questions or suggestions, feel free to reach out to us at <a href="mailto:contact@weatherinsights.com">contact@weatherinsights.com</a>.</p>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 WeatherInsights. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://www.openweathermap.org/" target="_blank">Weather API</a> |
+                <a href="https://momentjs.com/" target="_blank">Moment.js</a> |
+                <a href="https://www.chartjs.org" target="_blank">Chart.js</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="index.js"></script>
+
+</body>
+</html>
